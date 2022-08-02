@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&display=swap");
+
+* {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  background-color: hsl(27, 66%, 92%);
+}
+
+$primary: hsl(10, 79%, 65%);
+$secondary: hsl(28, 10%, 53%);
+
+.App {
+  text-align: center;
+}
+
+.header {
+  width: 50rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  text-align: left;
+  background-color: $primary;
+  height: 10rem;
+  border-radius: 10px;
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: white;
+  }
+  p {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+}
+
+.header-content {
+  margin: auto 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.data {
+  background-color: white;
+  width: 50rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  padding: 3rem 0rem 0.5rem 0;
+
+  .title {
+    font-size: 3rem;
+    color: hsl(25, 47%, 15%);
+  }
+  .data-in {
+    text-align: left;
+    margin: 0 3rem;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      text-align: center;
+      margin: 2rem 0;
+      li {
+        margin-top: 1rem;
+      }
+      .bar-amount {
+        background-color: hsl(25, 47%, 15%);
+        color: white;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        display: block;
+      }
+
+      .bar {
+        background-color: $primary;
+        float: inline-end;
+        display: flex;
+        border-radius: 0.5rem;
+        transition: all 0.4s;
+      }
+      .bar:hover {
+        background-color: hsl(10, 80%, 76%);
+      }
+    }
+  }
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  p {
+    color: hsl(28, 10%, 53%);
+  }
+  h3 {
+    text-align: end;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
